@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Technicolor Test</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+
+  
+<div class="container">
+  <div class="row">
+    <div class="col-sm-2"> 
+      <a href="/" class="btn btn-info" role="button">Back</a>
+    </div>
+    <div class="col-sm-8">
+            <h3 align="center">File Operation Result</h3> 
+            <table class="table table-striped">
+        <thead>
+          <tr>
+            <th>File </th>
+          </tr>
+        </thead>
+        {% for key in result %}
+           <tr>
+              <td> {{ key }} </td>
+           </tr>
+        {% endfor %}
+     </table>
+    </div>
+    <div class="col-sm-2">
+      
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
